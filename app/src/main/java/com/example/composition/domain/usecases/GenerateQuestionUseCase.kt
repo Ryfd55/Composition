@@ -9,7 +9,7 @@ class GenerateQuestionUseCase(
 ) {
 
     operator fun invoke(maxSumValue: Int): Question {
-        return repository.generateQuestion()
+        return repository.generateQuestion(maxSumValue, COUNT_OF_OPTIONS)
     }
 
     private companion object {
